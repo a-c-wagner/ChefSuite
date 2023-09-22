@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Serif:wght@300&family=Oswald&display=swap');
+
+h1 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Serif';
+}
+::placeholder {
+  font-family: 'Noto Serif';
+}
+
+body {
+  background: #fdb0b0a0;
+  font-family: 'Noto Serif';
+}
+
+.recipe-header {
+  border: 1px solid;
+}
+
+.search-bar {
+  display: inline-block;
+  justify-content: flex-end;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.search-bar input {
+  display: inline-block;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 10px;
+  background: #a2e8e8a0;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.recipe-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe-card {
+  width: 200px;
+  border: 1px solid rgb(192, 192, 192);
+  margin: 5px;
+  box-shadow: 0px 0px 5px #c0c0c0;
+  border-radius: 5px;
+  padding: 15px;
+  background: #a2e8e8a0;
+  font-family: 'Noto Serif';
+}
+
+.ingredient-item {
+  text-align: left;
+}
+
+ingredient-list {
+  margin-left: 5px;
+}
+
+.recipe-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Noto Serif';
+}
+
+.button-content {
+  transition: transform 1s;
+}
+
+.recipe-button.expanded .button-content {
+  transform: scale(3);
+  background: white;
+  border: 1px solid rgb(192, 192, 192);
+  margin: 5px;
+  box-shadow: 0px 0px 5px #c0c0c0;
+  border-radius: 5px;
+  padding: 15px;
+}
+.add-recipe label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-recipe input {
+  font-family: 'Noto Serif';
+  width: 25%;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+  transition: width 0.4s ease-in-out;
+}
+
+.add-recipe input:focus {
+  background-color: #a2e8e8a0;
+  width: 50%;
+}
+
+.add-recipe button {
+  font-family: 'Noto Serif';
+  padding: 6px 10px;
+  margin: 10px;
+  background: #a2e8e8a0;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
